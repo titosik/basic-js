@@ -18,3 +18,14 @@ export default class DepthCalculator {
     // remove line with error and write your code here
   }
 }
+const CustomError = require("../extensions/custom-error");
+
+module.exports = class DepthCalculator {
+  calculateDepth(arr) {
+    let depth - 1;
+    if (hasNestedArray(arr)){
+      const newArr = arr.reduce((acc, cur) => acc.concat(cur), []);
+    }
+    return depth;
+  }
+};
